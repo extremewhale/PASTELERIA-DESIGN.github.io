@@ -13,12 +13,15 @@
     --color-hover-button: #E5EED1;
     --color-hover-nav: #D8A46F;
 
+    --font-style-title: 'Fraunces', serif;
+
 }
 
 
 /* ESTILOS GENERALES*/
 html {
     font-size: 10px;
+
 }
 
 body {
@@ -40,27 +43,30 @@ h6 {
     color: var(--color-titles);
 }
 
+
+
 /*BARRA MENU*/
 .layout__menu {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     transition: 0.7s;
     padding: 10px 20px;
     z-index: 10;
     background-color: var(--color-principal);
+
+
 }
 
 .layout__menu.abajo {
-
-
+    transition: 1s;
     background: #ffffff;
     justify-content: center;
     padding: 15px 20px;
-    width: 80%;
+
 
 }
 
@@ -99,4 +105,165 @@ h6 {
     transition: 300ms;
     transform: scale(1.2);
 
+}
+
+.content__page-options {
+    padding-top: 100px;
+
+    height: 35rem;
+    background-color: var(--color-principal);
+}
+
+.page-info__content-title {
+    background-color: var(--color-principal);
+}
+
+.page-info__title {
+    font-size: 5rem;
+    font-family: var(--font-style-title);
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-info__buttons {
+    padding: 5rem;
+    background-color: var(--color-principal);
+
+    height: 5rem;
+    margin: 2rem;
+}
+
+.buttons__button {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.button__container {
+    margin: 0px 1.5rem;
+    width: 35vw;
+    height: 4rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: var(--color-icons) 2px solid;
+    transition: 300ms ease-in-out;
+}
+
+
+.button__container:hover {
+    cursor: pointer;
+
+    background-color: var(--color-hover-button);
+    border: var(--color-hover-button) 2px solid;
+}
+
+.button__text {
+
+    font-family: var(--font-style-title);
+}
+
+.page-info__cakes {
+    margin: 5rem;
+}
+
+.cakes__content-title {
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    font-family: var(--font-style-title);
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cakes__grid-cakes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+}
+
+.cakes__cake {
+    width: 20vw;
+    display: block;
+    justify-items: center;
+}
+
+.cake__image-container {
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+.cake__image {
+    border-radius: 2rem;
+}
+
+.cake__description-cake,
+.cake__price-smal,
+.cake__price-big,
+.cake__title {
+    text-align: center;
+    line-height: 3rem;
+    font-family: var(--font-style-title);
+}
+
+.cake__title {
+    color: var(--color-titles);
+    font-size: 3rem;
+}
+
+.cake__price-big,
+.cake__price-smal {
+    color: var(--color-price);
+}
+
+.cake__description-cake {
+    font-size: 2rem;
+
+    color: var(--color-text);
+}
+
+.layout__footer {
+
+    height: 45rem;
+    justify-items: center;
+    justify-content: center;
+    background-color: var(--color-hover-button);
+}
+
+.footer__stores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.stores__store {
+    width: 25vw;
+}
+
+.stores__store h4 {
+    font-size: 1.5rem;
+    line-height: 5rem;
+    text-align: center;
+
+}
+
+.stores__store p {
+    font-size: 1.5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-family: var(--font-style-title);
+}
+
+.footer__Watermark {
+    margin-top: 3rem;
+    text-align: center;
 }
